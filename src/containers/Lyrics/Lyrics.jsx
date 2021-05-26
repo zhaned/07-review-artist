@@ -1,9 +1,11 @@
 import React from 'react'
 
-export const Lyrics = () => {
+const Lyrics = () => {
     return (
         <main>
             
         </main>
     )
 }
+
+export default Lyrics;

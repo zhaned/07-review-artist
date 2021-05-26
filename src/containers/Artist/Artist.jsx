@@ -1,9 +1,11 @@
 import React from 'react'
 
-export const Artist = () => {
+const Artist = () => {
     return (
         <main>
             
         </main>
     )
 }
+
+export default Artist;
