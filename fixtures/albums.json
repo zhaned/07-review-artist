@@ -1,0 +1,201 @@
+{
+    "release-count": 238,
+    "release-offset": 0,
+    "releases": [
+        {
+            "quality": "normal",
+            "status": "Official",
+            "id": "11804dcb-9aa5-420c-a2f1-dddfba12c0e3",
+            "asin": null,
+            "cover-art-archive": {
+                "artwork": true,
+                "back": false,
+                "darkened": false,
+                "count": 1,
+                "front": true
+            },
+            "text-representation": {
+                "script": "Latn",
+                "language": "eng"
+            },
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "date": "1991",
+            "title": "Baghdad",
+            "disambiguation": "",
+            "packaging": "Cardboard/Paper Sleeve",
+            "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+            "country": "US",
+            "release-events": [
+                {
+                    "area": {
+                        "type": null,
+                        "iso-3166-1-codes": [
+                            "US"
+                        ],
+                        "id": "489ce91b-6658-3307-9877-795b68554c98",
+                        "disambiguation": "",
+                        "sort-name": "United States",
+                        "name": "United States",
+                        "type-id": null
+                    },
+                    "date": "1991"
+                }
+            ],
+            "barcode": ""
+        },
+        {
+            "packaging": "Cassette Case",
+            "disambiguation": "",
+            "title": "6 Songs",
+            "barcode": "",
+            "country": "US",
+            "release-events": [
+                {
+                    "area": {
+                        "id": "489ce91b-6658-3307-9877-795b68554c98",
+                        "iso-3166-1-codes": [
+                            "US"
+                        ],
+                        "disambiguation": "",
+                        "type": null,
+                        "type-id": null,
+                        "name": "United States",
+                        "sort-name": "United States"
+                    },
+                    "date": "1986-07"
+                }
+            ],
+            "packaging-id": "c70b737a-0114-39a9-88f7-82843e54f906",
+            "cover-art-archive": {
+                "artwork": false,
+                "back": false,
+                "darkened": false,
+                "count": 0,
+                "front": false
+            },
+            "asin": null,
+            "id": "286c6f9e-dc8f-422f-9e2e-7bebb0c8050f",
+            "status": "Promotion",
+            "quality": "normal",
+            "date": "1986-07",
+            "status-id": "518ffc83-5cde-34df-8627-81bff5093d92",
+            "text-representation": {
+                "language": "eng",
+                "script": "Latn"
+            }
+        },
+        {
+            "text-representation": {
+                "language": "eng",
+                "script": "Latn"
+            },
+            "date": "1989-03",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "id": "2af14d71-4333-494a-a981-7701897e3f1c",
+            "quality": "normal",
+            "status": "Official",
+            "asin": null,
+            "cover-art-archive": {
+                "front": true,
+                "darkened": false,
+                "count": 1,
+                "back": false,
+                "artwork": true
+            },
+            "country": "US",
+            "release-events": [
+                {
+                    "date": "1989-03",
+                    "area": {
+                        "type": null,
+                        "id": "489ce91b-6658-3307-9877-795b68554c98",
+                        "disambiguation": "",
+                        "iso-3166-1-codes": [
+                            "US"
+                        ],
+                        "name": "United States",
+                        "sort-name": "United States",
+                        "type-id": null
+                    }
+                }
+            ],
+            "barcode": null,
+            "packaging-id": null,
+            "packaging": null,
+            "disambiguation": "",
+            "title": "The Offspring"
+        },
+        {
+            "text-representation": {
+                "language": "eng",
+                "script": "Latn"
+            },
+            "date": "1986",
+            "status-id": "4e304316-386d-3409-af2e-78857eec5cfe",
+            "id": "9498e892-4b4f-4ec3-a429-5f02d0cb8ed0",
+            "quality": "normal",
+            "status": "Official",
+            "asin": null,
+            "cover-art-archive": {
+                "front": true,
+                "count": 4,
+                "darkened": false,
+                "back": true,
+                "artwork": true
+            },
+            "release-events": [
+                {
+                    "area": {
+                        "type": null,
+                        "id": "489ce91b-6658-3307-9877-795b68554c98",
+                        "iso-3166-1-codes": [
+                            "US"
+                        ],
+                        "disambiguation": "",
+                        "sort-name": "United States",
+                        "name": "United States",
+                        "type-id": null
+                    },
+                    "date": "1986"
+                }
+            ],
+            "country": "US",
+            "barcode": "",
+            "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+            "packaging": "Cardboard/Paper Sleeve",
+            "disambiguation": "",
+            "title": "I'll Be Waiting"
+        },
+        {
+            "barcode": null,
+            "country": null,
+            "release-events": [
+                {
+                    "area": null,
+                    "date": "1991"
+                }
+            ],
+            "packaging-id": "f7101ce3-0384-39ce-9fde-fbbd0044d35f",
+            "packaging": "Cardboard/Paper Sleeve",
+            "disambiguation": "",
+            "title": "They Were Born To Kill",
+            "text-representation": {
+                "language": "eng",
+                "script": "Latn"
+            },
+            "date": "1991",
+            "status-id": "1156806e-d06a-38bd-83f0-cf2284a808b9",
+            "id": "fc9eaec8-2a6c-4e65-baaf-77bc01cddd69",
+            "status": "Bootleg",
+            "quality": "normal",
+            "cover-art-archive": {
+                "front": false,
+                "artwork": false,
+                "back": false,
+                "darkened": false,
+                "count": 0
+            },
+            "asin": null
+        }
+    ]
+}

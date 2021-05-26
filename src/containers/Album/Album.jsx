@@ -3,7 +3,7 @@ import React from 'react'
 const Album = () => {
     return (
         <main>
-            //list of songs
+            <ul aria-label='album-songs'></ul>
         </main>
     )
 }

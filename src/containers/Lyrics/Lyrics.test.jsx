@@ -10,7 +10,7 @@ import {setupServer} from 'msw/node'
 import mockLyricData from '../../../fixtures/lyrics.json'
 // //files with api calls
 const server = setupServer(
-    rest.get(`https://api.lyrics.ovh/v1/queen/the night comes down`, (req,res,ctx) => {
+    rest.get(`https://api.lyrics.ovh/v1/queen/the%20night%20comes%20down`, (req,res,ctx) => {
         return res(ctx.json(mockLyricData));
     })
 );
@@ -20,11 +20,11 @@ describe('Tests the Song page', ()=> {
     afterAll(()=> server.close());
     it('renders a song and all it\'s lyrics', () => {
         render(
-            <MemoryRouter initialEntries={['/lyrics']}>
+            <MemoryRouter initialEntries={['/queen/queen/whenthenightcomesdown/']}>
                 <App />
-                <Route path='/:lyrics' />
+                <Route path='/:artist/:albums/:song' />
             </MemoryRouter>
         )
-        const element =screen.getByRole('role', {name:'<aria-label>'})
+        const element = screen.getByRole('region', {name:'lyrics-section'})
     })
 })
