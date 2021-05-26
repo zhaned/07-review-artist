@@ -8,7 +8,7 @@ import { MemoryRouter, Route } from 'react-router-dom';
 import { rest } from 'msw';
 import { setupServer } from 'msw/node';
 import mockLyricData from '../../../fixtures/lyrics.json';
-// //files with api calls
+
 const server = setupServer(
   rest.get(
     `https://api.lyrics.ovh/v1/queen/the%20night%20comes%20down`,
