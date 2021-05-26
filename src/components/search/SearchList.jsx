@@ -15,7 +15,13 @@ const SearchList = ({ artists }) => {
 }
 
 SearchList.propTypes = {
-
+artists: PropTypes.arrayOf(
+    PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired,
+        type: PropTypes.string.isRequired,
+    })
+).isRequired,
 }
 
-export default SearchList
+export default SearchList;

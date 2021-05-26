@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import AlbumList from '../../components/album/AlbumList';
 
 const Album = () => {
     return (
         <main>
-            <ul aria-label='album-songs'></ul>
+            <AlbumList />
         </main>
     )
 }

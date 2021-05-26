@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const SearchItem = ({ id, name, type }) => {
     return (
-        <Link to={id}>
+        <Link to={`/${id}`}>
             <h2>{name}</h2>
             <p>{type}</p>
         </Link>
@@ -12,7 +12,9 @@ const SearchItem = ({ id, name, type }) => {
 }
 
 SearchItem.propTypes = {
-
+id: PropTypes.string.isRequired,
+name: PropTypes.string.isRequired,
+type: PropTypes.string.isRequired,
 }
 
-export default SearchItem
+export default SearchItem;

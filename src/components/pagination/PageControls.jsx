@@ -4,9 +4,9 @@ import PropTypes from 'prop-types'
 const PageControls = ({ offset, onClickPrev, onClickNext}) => {
     return (
         <nav>
-            <button value='prev' onClick={onClickPrev} disabled={offset <= 0}>previous</button>
+            <button value={-5} onClick={onClickPrev} disabled={offset <= 0}>previous</button>
             <span>page</span>
-            <button value='next' onClick={onClickNext}>next</button>
+            <button value={5} onClick={onClickNext}>next</button>
         </nav>
     )
 }
