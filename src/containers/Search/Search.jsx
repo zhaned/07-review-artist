@@ -1,9 +1,15 @@
 import React from 'react'
 
-export const Search = () => {
+const Search = () => {
     return (
         <main>
-
+            <form>
+                <input type='text' aria-label='artist-search' />
+                <button aria-label='submit-button'>Submit</button>
+            </form>
         </main>
     )
 }
+
+
+export default Search;

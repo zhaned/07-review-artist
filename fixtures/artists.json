@@ -1,0 +1,159 @@
+{
+    "created": "2021-05-26T00:49:17.716Z",
+    "count": 153,
+    "offset": 0,
+    "artists": [
+        {
+            "id": "e20a055c-b2e9-4c57-9490-f0c28f5cfaaa",
+            "type": "Person",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "score": 100,
+            "gender-id": "36d3d30a-839d-3eda-8cb3-29be4384e4a9",
+            "name": "A.B",
+            "sort-name": "A.B",
+            "gender": "male",
+            "country": "GB",
+            "area": {
+                "id": "8a754a16-0027-3a29-b6d7-2b40ea0481ed",
+                "type": "Country",
+                "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+                "name": "United Kingdom",
+                "sort-name": "United Kingdom",
+                "life-span": {
+                    "ended": null
+                }
+            },
+            "disambiguation": "UK DJ/producer Alex Bailey",
+            "life-span": {
+                "ended": null
+            },
+            "aliases": [
+                {
+                    "sort-name": "A.B.",
+                    "name": "A.B.",
+                    "locale": null,
+                    "type": null,
+                    "primary": null,
+                    "begin-date": null,
+                    "end-date": null
+                }
+            ]
+        },
+        {
+            "id": "fec4adf6-758f-4719-9236-d9ce0167f94d",
+            "type": "Group",
+            "type-id": "e431f5f6-b5d2-343d-8b36-72607fffb74b",
+            "score": 99,
+            "name": "AB’s",
+            "sort-name": "A.B.'s",
+            "country": "JP",
+            "area": {
+                "id": "2db42837-c832-3c27-b4a3-08198f75693c",
+                "type": "Country",
+                "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+                "name": "Japan",
+                "sort-name": "Japan",
+                "life-span": {
+                    "ended": null
+                }
+            },
+            "disambiguation": "Japanese jazz funk group",
+            "life-span": {
+                "ended": null
+            },
+            "tags": [
+                {
+                    "count": 1,
+                    "name": "city pop"
+                }
+            ]
+        },
+        {
+            "id": "827b9212-6451-4193-bad5-69e25b8cf66a",
+            "type": "Person",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "score": 98,
+            "name": "AB+",
+            "sort-name": "AB+",
+            "disambiguation": "acid jazz",
+            "life-span": {
+                "begin": "1960-06-21",
+                "ended": null
+            }
+        },
+        {
+            "id": "796de5ef-239f-4414-8666-eb0f8855f724",
+            "type": "Person",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "score": 97,
+            "gender-id": "36d3d30a-839d-3eda-8cb3-29be4384e4a9",
+            "name": "AB",
+            "sort-name": "AB",
+            "gender": "male",
+            "country": "US",
+            "area": {
+                "id": "489ce91b-6658-3307-9877-795b68554c98",
+                "type": "Country",
+                "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+                "name": "United States",
+                "sort-name": "United States",
+                "life-span": {
+                    "ended": null
+                }
+            },
+            "disambiguation": "US rapper Aaron Abernathy",
+            "life-span": {
+                "ended": null
+            },
+            "aliases": [
+                {
+                    "sort-name": "A.B.",
+                    "type-id": "1937e404-b981-3cb7-8151-4c86ebfc8d8e",
+                    "name": "A.B.",
+                    "locale": null,
+                    "type": "Search hint",
+                    "primary": null,
+                    "begin-date": null,
+                    "end-date": null
+                }
+            ]
+        },
+        {
+            "id": "061e4336-6869-4c98-b971-3c63b21d26e1",
+            "type": "Person",
+            "type-id": "b6e035f4-3ce9-331c-97df-83397230b0df",
+            "score": 96,
+            "gender-id": "93452b5a-a947-30c8-934f-6a4056b151c2",
+            "name": "AB",
+            "sort-name": "에이비",
+            "gender": "female",
+            "country": "KR",
+            "area": {
+                "id": "b9f7d640-46e8-313e-b158-ded6d18593b3",
+                "type": "Country",
+                "type-id": "06dd0ae4-8c74-30bb-b43d-95dcedf961de",
+                "name": "South Korea",
+                "sort-name": "South Korea",
+                "life-span": {
+                    "ended": null
+                }
+            },
+            "disambiguation": "South Korean soloist",
+            "life-span": {
+                "ended": null
+            },
+            "aliases": [
+                {
+                    "sort-name": "에이비",
+                    "type-id": "894afba6-2816-3c24-8072-eadb66bd04bc",
+                    "name": "AB",
+                    "locale": "ko_KR",
+                    "type": "Artist name",
+                    "primary": true,
+                    "begin-date": null,
+                    "end-date": null
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "recording-count": 4,
+    "recordings": [
+        {
+            "length": 157266,
+            "video": false,
+            "id": "3fe500ea-7af2-41bb-a39d-6f97559a2ded",
+            "title": "Hey Joe",
+            "first-release-date": "1991",
+            "disambiguation": ""
+        },
+        {
+            "disambiguation": "early version",
+            "title": "Get It Right",
+            "first-release-date": "1991",
+            "video": false,
+            "id": "6868a465-ab46-471f-a099-46d42df4bcf7",
+            "length": 181000
+        },
+        {
+            "disambiguation": "",
+            "first-release-date": "1991",
+            "title": "Baghdad",
+            "id": "7179891a-3035-4ae6-bee3-1ac0a812222a",
+            "video": false,
+            "length": 198426
+        },
+        {
+            "disambiguation": "",
+            "title": "The Blurb",
+            "first-release-date": "1991",
+            "id": "db07288b-8caf-4d69-aed3-0ac51843df99",
+            "video": false,
+            "length": 101000
+        }
+    ],
+    "recording-offset": 0
+}

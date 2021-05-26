@@ -1,9 +1,11 @@
 import React from 'react'
 
-export const Album = () => {
+const Album = () => {
     return (
         <main>
-            //list of songs
+            <ul aria-label='album-songs'></ul>
         </main>
     )
 }
+
+export default Album;

@@ -1,9 +1,11 @@
 import React from 'react'
 
-export const Lyrics = () => {
+const Lyrics = () => {
     return (
         <main>
-            
+            <section role='region' aria-label='lyrics-section'>f</section>
         </main>
     )
 }
+
+export default Lyrics;
