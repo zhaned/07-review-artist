@@ -5,6 +5,9 @@ import Artist from '../../containers/Artist/Artist'
 import Lyrics from '../../containers/Lyrics/Lyrics'
 import Search from '../../containers/Search/Search';
 import Header from '../header/Header'
+import './style.css'
+
+
 export default function App() {
   return(
   <>

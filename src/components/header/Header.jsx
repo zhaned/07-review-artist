@@ -1,16 +1,14 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
+import style from './header.css';
 
-const Header = props => {
+const Header = () => {
     return (
-        <div>
-            
-        </div>
+        <header className={style.header}>
+            <h1>shuffle</h1>
+            <Link to='/'>search</Link>
+        </header>
     )
-}
-
-Header.propTypes = {
-
 }
 
 export default Header
