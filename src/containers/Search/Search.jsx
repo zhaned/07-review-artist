@@ -7,7 +7,7 @@ import { getArtists } from '../../services/artistApi';
 const Search = () => {
   const [loading, setLoading] = useState(false);
   const [artists, setArtists] = useState([]);
-  const [query, setQuery] = useState('frank sinatra');
+  const [query, setQuery] = useState('');
   const [offset, setOffset] = useState(0);
 
   const handleChange = (e) => {
@@ -16,7 +16,6 @@ const Search = () => {
 
   useEffect(() => {
     search();
-    
   }, [offset]);
 
   const search = () => {
@@ -24,7 +23,6 @@ const Search = () => {
         
     getArtists(query, offset)
       .then(setArtists)
-      .then(() => console.log('offset', offset))
       .finally(() => setLoading(false));
   };
 
@@ -35,15 +33,7 @@ const Search = () => {
   };
 
   const handlePageChange = async (e) => {
-    // if (e.target.value === 'prev') {
     setOffset((offset) => offset + Number(e.target.value));
-      
-      
-    // } else {
-    //   setOffset((offset) => offset + 5);
-      
-      
-    
   };
     
   return (
@@ -58,8 +48,8 @@ const Search = () => {
         onClickNext={handlePageChange}/>
       <SearchList artists={artists}/>
     </main>
-  )
-}
+  );
+};
 
 
 export default Search;

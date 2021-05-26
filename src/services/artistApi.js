@@ -19,28 +19,28 @@ export async function getReleases(artistId, artistName, offset) {
     return releases.map((release) => ({
         id: release.id,
         artist: artistName,
-        title: release.title,
+        release: release.title,
         image: `http://coverartarchive.org/release/${release.id}/front` || 'https://placekitten.com/300/300'
     }))
 }
 
 export async function getSongs(releaseId, artistName){
-    const res = fetch(`http://musicbrainz.org/ws/2/recording?release=${releaseId}&fmt=json`);
-
+    const res = await fetch(`http://musicbrainz.org/ws/2/recording?release=${releaseId}&fmt=json`);
+    console.log(res);
     const {recordings} = await res.json();
     // const songRes = fetch(`https://api.lyrics.ovh/v1/${artist}/${title}`)
     // const {lyrics} = await songRes.json();
-
+    console.log('look over hereasdfasdfasdfasdf');
     return recordings.map((song) => ({
         id: song.id,
         artist: artistName,
-        title: song.title,
-        lyrics: lyrics,
+        song: song.title,
+        // lyrics: lyrics,
     }))
 }
 
 export async function getLyrics(artist, title){
-    const res = fetch(`https://api.lyrics.ovh/v1/${artist}/${title}`)
+    const res = await fetch(`https://api.lyrics.ovh/v1/${artist}/${title}`)
     const {lyrics} = await res.json();
     return lyrics;
 }
