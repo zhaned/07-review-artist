@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const ArtistItem = props => {
     return (
         <div>
-            
+            ArtistItem
         </div>
     )
 }

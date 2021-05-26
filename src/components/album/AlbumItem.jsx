@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const AlbumItem = props => {
     return (
         <div>
-//link
+            AlbumItem
         </div>
     )
 }
