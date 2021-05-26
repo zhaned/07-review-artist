@@ -1,3 +1,4 @@
+/* eslint-disable */
 export async function getArtists(query,offset){
     const res = await fetch(`http://musicbrainz.org/ws/2/artist?query=${query}&fmt=json&limit=5&offset=${offset}`)
     const {artists} = await res.json();
@@ -10,8 +11,8 @@ export async function getArtists(query,offset){
   }))
 }
 
-export async function getReleases(artistId, artistName) {
-    const res = await fetch(`http://musicbrainz.org/ws/2/release?artist=${artistId}&fmt=json`);
+export async function getReleases(artistId, artistName, offset) {
+    const res = await fetch(`http://musicbrainz.org/ws/2/release?artist=${artistId}&fmt=json&limit=5&offset=${offset}`);
 
     const {releases} = await res.json();
     
@@ -19,7 +20,7 @@ export async function getReleases(artistId, artistName) {
         id: release.id,
         artist: artistName,
         title: release.title,
-        image: `http://coverartarchive.org/release/${release.id}front` || 'http://placekitten.com/300/300'
+        image: `http://coverartarchive.org/release/${release.id}/front` || 'https://placekitten.com/300/300'
     }))
 }
 

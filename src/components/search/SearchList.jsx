@@ -1,6 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import SearchItem from './SearchItem'
+/* eslint-disable */
+import React from 'react';
+import PropTypes from 'prop-types';
+import SearchItem from './SearchItem';
 
 const SearchList = ({ artists }) => {
     return (
