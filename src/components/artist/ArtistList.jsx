@@ -2,14 +2,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ArtistItem from './ArtistItem';
+import './artist.css';
 
-const ArtistList = ({ releases }) => {
+const ArtistList = ({ releases, artist }) => {
     return (
         <>
-            <h2>{releases.artist}</h2>
+            <h2>{artist}</h2>
             <ul>
                 {releases.map((release) => (
-                   <li key={release.title}>
+                   <li key={release.id}>
                         <ArtistItem {...release}/>  
                    </li> 
                 ))}
@@ -23,7 +24,7 @@ ArtistList.propTypes = {
         PropTypes.shape({
             id: PropTypes.string.isRequired, 
             artist: PropTypes.string.isRequired,
-            title: PropTypes.string.isRequired,
+            release: PropTypes.string.isRequired,
             image: PropTypes.string.isRequired,
         })
     ).isRequired,
