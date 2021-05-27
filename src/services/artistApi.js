@@ -26,10 +26,8 @@ export async function getReleases(artistId, artistName, offset) {
 
 export async function getSongs(releaseId, artistName){
     const res = await fetch(`http://musicbrainz.org/ws/2/recording?release=${releaseId}&fmt=json`);
-    console.log(res);
     const {recordings} = await res.json();
 
-    console.log('look over hereasdfasdfasdfasdf');
     return recordings.map((song) => ({
         id: song.id,
         artist: artistName,

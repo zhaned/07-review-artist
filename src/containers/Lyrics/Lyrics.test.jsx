@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 import React from 'react';
-import { screen, render } from '@testing-library/react';
+import { screen, render, waitFor, getByText } from '@testing-library/react';
 import App from '../../components/app/App';
 import { MemoryRouter, Route } from 'react-router-dom';
 import { rest } from 'msw';
@@ -23,11 +23,16 @@ describe('Tests the Song page', () => {
   afterAll(() => server.close());
   it('renders song lyrics', () => {
     render(
-      <MemoryRouter initialEntries={['/queen/queen/whenthenightcomesdown/']}>
+      <MemoryRouter initialEntries={['/The Offspring/Baghdad/Baghdad/lyrics']}>
         <App />
-        <Route path="/:artist/:albums/:song" />
+        <Route path="/:artist/:albums/:song/lyrics" />
       </MemoryRouter>
     );
-    const element = screen.getByRole('region', { name: 'lyrics-section' });
+
+    return waitFor(() => {
+      screen.getAllByText('Worlds that echo in your mind', { exact: false });
+      screen.getByText('The Offspring', { exact: false });
+      screen.getAllByText('Baghdad', { exact: false });
+    });
   });
 });

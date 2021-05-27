@@ -5,9 +5,9 @@ import SearchItem from './SearchItem';
 
 const SearchList = ({ artists }) => {
     return (
-        <ul>
+        <ul aria-label='search-artist'>
             {artists.map((artist) => (
-                <li key={artist.id}>
+                <li key={artist.id} aria-label='artist-result'>
                     <SearchItem {...artist}/>
                 </li>
             ))}

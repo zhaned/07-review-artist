@@ -8,9 +8,9 @@ const ArtistList = ({ releases, artist }) => {
     return (
         <>
             <h2>{artist}</h2>
-            <ul>
+            <ul aria-label='album-list'>
                 {releases.map((release) => (
-                   <li key={release.id}>
+                   <li key={release.id} aria-label='album-item'>
                         <ArtistItem {...release}/>  
                    </li> 
                 ))}
