@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import AlbumList from '../../components/album/AlbumList';
 import { useParams } from 'react-router-dom';
 import { getSongs } from '../../services/artistApi';
-
+import Spinner from '../../components/spinner/Spinner';
 
 const Album = () => {
   const [loading, setLoading] = useState(false);
@@ -15,6 +15,8 @@ const Album = () => {
       .then(setAlbum)
       .finally(() => setLoading(false));
   }, []);
+
+  if (loading) return <Spinner />
 
   return (
     <main>

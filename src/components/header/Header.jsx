@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className={style.header}>
       <h1>shuffle</h1>
-      <Link to="/">search</Link>
+      <Link to="/">🔎 search</Link>
     </header>
   );
 };
