@@ -10,7 +10,7 @@ import { setupServer } from 'msw/node';
 
 const server = setupServer(
   rest.get(
-    'http://musicbrainz.org/ws/2/recording?release=11804dcb-9aa5-420c-a2f1-dddfba12c0e3&fmt=json',
+    'https://musicbrainz.org/ws/2/recording?release=11804dcb-9aa5-420c-a2f1-dddfba12c0e3&fmt=json',
     (req, res, ctx) => {
       return res(ctx.json(mockLyricData));
     }

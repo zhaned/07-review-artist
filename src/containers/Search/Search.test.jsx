@@ -17,7 +17,7 @@ import artistsMockData from '../../../fixtures/search.json';
 
 const server = setupServer(
   rest.get(
-    'http://musicbrainz.org/ws/2/artist?query=ab&fmt=json&limit=5',
+    'https://musicbrainz.org/ws/2/artist?query=ab&fmt=json&limit=5',
     (req, res, ctx) => {
       return res(ctx.json(artistsMockData));
     }
