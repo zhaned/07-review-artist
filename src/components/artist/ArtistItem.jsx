@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const ArtistItem = ({ id, artist, release, image }) => {
     return (
         <Link to={`/${artist}/${release}/${id}`}>
-            <img src={image} alt={release} />
+            <img src={image} onError={(e)=>{e.target.onerror = null; e.target.src="https://placekitten.com/300/300"}}/>
             <h3>{release}</h3>
         </Link>
     )

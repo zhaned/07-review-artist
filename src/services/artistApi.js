@@ -20,7 +20,7 @@ export async function getReleases(artistId, artistName, offset) {
         id: release.id,
         artist: artistName,
         release: release.title,
-        image: `http://coverartarchive.org/release/${release.id}/front` || 'https://placekitten.com/300/300'
+        image: `http://coverartarchive.org/release/${release.id}/front`
     }))
 }
 
