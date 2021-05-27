@@ -33,8 +33,9 @@ describe('tests the homepage', () => {
         <Route path="/" />
       </MemoryRouter>
     );
-    return waitFor(() => {
-      const input = screen.getByRole('textbox', { name: 'artist-search' });
+    return waitFor(async () => {
+      await screen.findByAltText('loading');
+      const input = await screen.findByRole('textbox', { name: 'artist-search' });
       const button = screen.getByRole('button', { name: 'submit-button' });
 
       fireEvent.change(input, {
@@ -44,7 +45,7 @@ describe('tests the homepage', () => {
       expect(input.value).toBe('ab');
 
       fireEvent.click(button);
-      screen.getByRole('list', { name: 'search-artist' });
+      await screen.findByRole('list', { name: 'search-artist' });
       const li = screen.getAllByRole('listitem', { name: 'artist-result' });
       expect(li).toHaveLength(5);
     });

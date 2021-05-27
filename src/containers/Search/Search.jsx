@@ -5,6 +5,7 @@ import SearchList from '../../components/search/SearchList';
 import Spinner from '../../components/spinner/Spinner'
 import { getArtists } from '../../services/artistApi';
 
+
 const Search = () => {
   const [loading, setLoading] = useState(false);
   const [artists, setArtists] = useState([]);
