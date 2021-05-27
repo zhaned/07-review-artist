@@ -3,6 +3,7 @@ import ArtistList from '../../components/artist/ArtistList';
 import { getReleases } from '../../services/artistApi';
 import { useParams } from 'react-router-dom';
 import PageControls from '../../components/pagination/PageControls';
+import Spinner from '../../components/spinner/Spinner';
 
 const Artist = () => {
   const [loading, setLoading] = useState(false);
@@ -20,6 +21,8 @@ const Artist = () => {
   const handlePageChange = async (e) => {
     setOffset((offset) => offset + Number(e.target.value));
   };
+
+  if (loading) return <Spinner />
 
   return (
     <main>

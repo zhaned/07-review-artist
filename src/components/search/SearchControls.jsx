@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import style from './search.css'
 
 const SearchControls = ({ query, onChange, onSubmit }) => {
   return (
-    <form onSubmit={onSubmit}>
+    <form 
+      className={style.searchbar}
+      onSubmit={onSubmit}>
       <input
         type="text"
         aria-label="artist-search"

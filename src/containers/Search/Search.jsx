@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PageControls from '../../components/pagination/PageControls';
 import SearchControls from '../../components/search/SearchControls';
 import SearchList from '../../components/search/SearchList';
+import Spinner from '../../components/spinner/Spinner'
 import { getArtists } from '../../services/artistApi';
 
 const Search = () => {
@@ -35,6 +36,8 @@ const Search = () => {
   const handlePageChange = async (e) => {
     setOffset((offset) => offset + Number(e.target.value));
   };
+
+  if (loading) return <Spinner />
     
   return (
     <main>

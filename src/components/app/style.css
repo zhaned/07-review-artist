@@ -6,6 +6,8 @@ body, html {
     width: 100%;
     height: auto;
     display: flex;
+    background: #162523 ;
+    color: #fdf7f2;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -23,4 +25,18 @@ main {
     margin-top: 3rem;
     margin: 0px;
     padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fdf7f2;
+    transition: 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #e25703;
+}
+
+li {
+    list-style: none;
 }
