@@ -11,7 +11,7 @@ import mockLyricData from '../../../fixtures/lyrics.json';
 
 const server = setupServer(
   rest.get(
-    'https://api.lyrics.ovh/v1/queen/the%20night%20comes%20down',
+    'https://api.lyrics.ovh/v1/the offspring/baghdad',
     (req, res, ctx) => {
       return res(ctx.json(mockLyricData));
     }
