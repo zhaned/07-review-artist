@@ -2,7 +2,13 @@
  * @jest-environment jsdom
  */
 import React from 'react';
-import { screen, render } from '@testing-library/react';
+import {
+  screen,
+  render,
+  waitFor,
+  fireEvent,
+  act,
+} from '@testing-library/react';
 import App from '../../components/app/App';
 import { MemoryRouter, Route } from 'react-router-dom';
 import { rest } from 'msw';
@@ -27,6 +33,20 @@ describe('tests the homepage', () => {
         <Route path="/" />
       </MemoryRouter>
     );
-    const input = screen.getByRole('textbox', { name: 'artist-search' });
+    return waitFor(() => {
+      const input = screen.getByRole('textbox', { name: 'artist-search' });
+      const button = screen.getByRole('button', { name: 'submit-button' });
+
+      fireEvent.change(input, {
+        target: { value: 'ab' },
+      });
+
+      expect(input.value).toBe('ab');
+
+      fireEvent.click(button);
+      screen.getByRole('list', { name: 'search-artist' });
+      const li = screen.getAllByRole('listitem', { name: 'artist-result' });
+      expect(li).toHaveLength(5);
+    });
   });
 });

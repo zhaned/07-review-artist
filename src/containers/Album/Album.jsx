@@ -13,7 +13,6 @@ const Album = () => {
     setLoading(true);
     getSongs(id, artist)
       .then(setAlbum)
-      .then(console.log(album, release, id))
       .finally(() => setLoading(false));
   }, []);
 
